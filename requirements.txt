@@ -1,0 +1,7 @@
+blinker==1.4
+coverage==4.3.4
+Flask==0.12
+Flask-Bootstrap==3.3.7.0
+Flask-SQLAlchemy==2.1
+Flask-WTF==0.13.1
+ipython==5.1.0

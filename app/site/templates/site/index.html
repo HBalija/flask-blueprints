@@ -1,0 +1,21 @@
+{% extends "site/base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                {{ wtf.quick_form(form) }}
+            </div>
+        </div>
+        {% if name %}
+            <h1>User {{ name }}</h1>
+            {% if new %}
+                <p>New user added!</p>
+            {% else %}
+                <p>User already exists!</p>
+            {% endif %}
+        {% endif %}
+    </div>
+{% endblock %}

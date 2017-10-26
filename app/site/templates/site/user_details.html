@@ -1,0 +1,21 @@
+{% extends "site/base.html" %}
+
+{% block title %}user | {{ user.name }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>{{ user.name }}</h1>
+</div>
+<div class="container">
+    <p>{{ user.description }}</p>
+</div>
+<div class="container">
+<form action="{{ url_for('site.user_delete', id=user.id) }}" method="post">
+    <input type="submit" role="button" class="btn btn-danger" value="Delete {{ user.name }}?" />
+</form>
+
+</div>
+{% endblock %}
+
+
+
