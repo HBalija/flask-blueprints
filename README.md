@@ -1,7 +1,8 @@
 # Flask sample app using blueprints
 
 This is an easy example app with focus on its modularity and its purpose is
-purely a helping reference when working with blueprints.
+purely a helping reference when working with blueprints for avoiding circular
+imports and such.
 
 App is divided into two blueprints, site and api. They both use the same
 database context defined in `config/base.py` settings file, along with other
@@ -49,6 +50,10 @@ Create `.env` file and set variales as shown in env,sample.
 To start develoment server, run:
 
     ./run.py
+
+Navigate to:
+
+    127.0.0.1:5000
 
 ## Running tests
 
